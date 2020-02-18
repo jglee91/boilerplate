@@ -1,0 +1,31 @@
+{
+  "name": "mern-stack",
+  "version": "1.0.0",
+  "description": "boilerplate mern stack",
+  "main": "index.js",
+  "scripts": {
+    "server": "cp ./server/.env.prod ./server/.env && node server/index.js",
+    "server:dev": "cp ./server/.env.dev ./server/.env && node server/index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"cp ./server/.env.dev ./server/.env\" \"nodemon server/index.js\" \"npm run start --prefix client\"",
+    "eslint": "eslint server/"
+  },
+  "author": "jglee91",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "nodemon": "^2.0.2"
+  }
+}
