@@ -11,7 +11,7 @@
 
 # misc
 .env
-#.env.dev
-#.env.prod
+.env.dev
+.env.prod
 
 npm-debug.log*
